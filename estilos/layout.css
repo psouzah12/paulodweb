@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdf5f7;
+    opacity: 1;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: blur(10px);
+}
+
+header {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255);
+    color: #eea1b1;
+    padding: 30px;
+    height: 20px;
+    box-shadow: 0 1px 10px rgba(124, 124, 124, 0.5);
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    height: auto;
+    max-width: 7%;
+    position: absolute;
+    top: -26px;
+    left: 10px;
+}
+
+nav {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255);
+    color: #eea1b1;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 130px;
+    box-shadow: 0 1px 10px rgba(124, 124, 124, 0.5);
+    border-radius: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+nav ul li:first-child {
+    padding: 4px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #c78896;
+    box-shadow: 0 1px 15px rgba(46, 40, 42, 0.2);
+}
+
+nav ul li:first-child a {
+    color: #ffedf1;
+    text-decoration: none;
+}
+
+nav ul li:not(:first-child) a {
+    color: #d89ba8;
+    text-decoration: none;
+}
+
+main pre {
+    padding: 20px;
+    font-size: 80px;
+    font-family: "Rubik Mono One", monospace;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 50px;
+    letter-spacing: -5px;
+    text-shadow: 0 5px 20px rgba(46, 40, 42, 0.4);
+}
+
+#avaliacao1 {
+    background-color: #ffffff;
+    box-shadow: 0 1px 15px rgba(46, 40, 42, 0.2);
+    border-radius: 45px;
+    text-align: justify;
+    position: absolute;
+    top: 520px;
+    left: 70px;
+    width: 16%;
+    height: 18%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #37252a;
+}
+
+#avaliacao2 {
+    background-color: #ffffff;
+    box-shadow: 0 1px 15px rgba(46, 40, 42, 0.2);
+    border-radius: 45px;
+    text-align: justify;
+    position: absolute;
+    top: 520px;
+    left: 430px;
+    width: 16%;
+    height: 18%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #37252a;
+}
+
+#avaliacao3 {
+    background-color: #ffffff;
+    box-shadow: 0 1px 15px rgba(46, 40, 42, 0.2);
+    border-radius: 45px;
+    text-align: justify;
+    position: absolute;
+    top: 520px;
+    left: 791px;
+    width: 16%;
+    height: 18%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #37252a;
+}
+
+.nome_perfil {
+    margin-top: 22px;
+}
+
+.perfilimg{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.descricao {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cookies li a {
+    padding: 14px 20px;
+    border-radius: 25px;
+    background-color: #c78896;
+    box-shadow: 0 1px 15px rgba(46, 40, 42, 0.2);
+    text-decoration: none;
+    color: #fdf5f7;
+}
+
+#cookies li {
+    list-style: none;
+    margin-top: 10px;
+    position: absolute;
+    top: 240px;
+    left: -1px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #d4a1ac;
+    color: #ffeef2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s ease;
+}
+
+footer p {
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+#cookies_imagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    position: absolute;
+    top: 110px;
+    right: 30px;
+}
+
+#cookies_imagem img {
+    width: 270px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 1px 15px rgba(46, 40, 42, 0.4);
+}
+
+#cookies_imagem img:last-child {
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 550px;
+}
+
+#cookies_imagem img:nth-child(2) {
+    height: 188px;
+}
